@@ -12,7 +12,7 @@ title: PROJECT:800a
 
 ## 🌌 Missione
 
-Il **PROJECT:800a** opera sulla base del principio che ciò che comunemente viene interpretato come "fiction" rappresenti, in realtà, l’accesso parziale a universi autentici. Le interazioni con tali ambienti hanno la potenzialità di alterarne la stabilità interna, con conseguenze che possono riverberarsi anche oltre i loro confini.
+**PROJECT:800a** opera sulla base del principio che ciò che comunemente viene interpretato come "fiction" rappresenti, in realtà, l’accesso parziale a universi autentici. Le interazioni con tali ambienti hanno la potenzialità di alterarne la stabilità interna, con conseguenze che possono riverberarsi anche oltre i loro confini.
 
 ---
 
