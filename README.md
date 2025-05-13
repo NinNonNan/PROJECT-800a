@@ -12,7 +12,7 @@ title: PROJECT:800a
 
 ## 🌌 Missione
 
-Il PROJECT:800a parte dalla premessa che ciò che definiamo "fiction" sia in realtà un portale verso universi reali. Le interazioni con questi ambienti possono alterarne gli equilibri, generando effetti non sempre prevedibili.
+Il **PROJECT:800a** parte dalla premessa che ciò che definiamo "fiction" sia in realtà un portale verso universi reali. Le interazioni con questi ambienti possono alterarne gli equilibri, generando effetti non sempre prevedibili.
 
 ---
 
@@ -28,7 +28,7 @@ Il PROJECT:800a parte dalla premessa che ciò che definiamo "fiction" sia in rea
   Intervenire per ristabilire la coerenza o per indagare elementi ignoti.
 
 - **Ricerca delle Origini**  
-  Scoprire chi ha creato il PROJECT:800a e con quale scopo.
+  Scoprire chi ha creato il **PROJECT:800a** e con quale scopo.
 
 ---
 
@@ -55,7 +55,7 @@ Il termine *dissonanza* definisce ogni anomalia o elemento incoerente rispetto a
 ---
 
 ## 🕵️ Entità operative  
-Le **entità operative** di PROJECT:800a sono in grado di interagire con realtà parallele. Le loro missioni variano dall'osservazione passiva a interventi strutturali, a seconda del livello di accesso e del contesto dimensionale.
+Le **entità operative** di **PROJECT:800a** sono in grado di interagire con realtà parallele. Le loro missioni variano dall'osservazione passiva a interventi strutturali, a seconda del livello di accesso e del contesto dimensionale.
 
 ---
 
@@ -64,9 +64,8 @@ Le **entità operative** si occupano di:
 
 - **Esplorazione dimensionale**: Viaggiare attraverso diverse realtà per comprenderne la natura, le leggi e le potenziali interconnessioni.
 - **Analisi delle realtà**: Studiare le caratteristiche uniche di ciascuna dimensione, identificando eventuali anomalie o "dissonanze" che potrebbero indicare un'interferenza esterna.
-- **Modifica selettiva**: In alcuni casi, PROJECT:800a interviene attivamente per correggere anomalie, proteggere la stabilità dimensionale o perseguire obiettivi specifici.
+- **Modifica selettiva**: In alcuni casi, **PROJECT:800a** interviene attivamente per correggere anomalie, proteggere la stabilità dimensionale o perseguire obiettivi specifici.
 - **Ricerca delle origini**: Il progetto è motivato dalla ricerca del creatore/creatrice originale, di cui si sono perse le tracce. Le **entità operative** credono che indizi sulla sua identità possano essere nascosti in una delle realtà esplorate.
-
 
 ---
 
@@ -87,11 +86,10 @@ Ogni universo è identificato da un **ID** e classificato in base al grado di in
 
 ## 🧩 Domande Aperte
 
-- Chi ha creato il PROJECT:800a?
+- Chi ha creato il **PROJECT:800a**?
 - Qual è il limite etico nell’alterare una realtà?
 - Esiste una verità oltre le realtà osservabili?
 
 ---
 
-*Benvenuto. Se stai leggendo questo, potresti già far parte del PROJECT:800a.*
-
+*Benvenuto. Se stai leggendo questo, potresti già far parte del **PROJECT:800a**.*
