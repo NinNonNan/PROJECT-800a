@@ -79,6 +79,8 @@ Consulta le schede dei principali universi:
 - [Green Oaks](greenoaks.md)
 - [Carbon 2185](carbon2185.md)
 - [La Torre Nera](thedarktower.md)
+- [No Man's Sky](nomanssky)
+- [Il Faro Al Termine Dell'Universo](ilfaroalterminedell'universo.md)
 
 Ogni universo è identificato da un **ID** e classificato in base al grado di intervento possibile.
 
