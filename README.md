@@ -54,9 +54,19 @@ Il termine *dissonanza* definisce ogni anomalia o elemento incoerente rispetto a
 
 ---
 
-## 🕵️ Agenti
+## 🕵️ Entità operative  
+Le **entità operative** di PROJECT:800a sono in grado di interagire con realtà parallele. Le loro missioni variano dall'osservazione passiva a interventi strutturali, a seconda del livello di accesso e del contesto dimensionale.
 
-Gli agenti di PROJECT:800a sono individui capaci di interagire con le realtà parallele. Le loro missioni variano da pura osservazione a interventi strutturali.
+---
+
+### Obiettivi e scopi
+Le **entità operative** si occupano di:
+
+- **Esplorazione dimensionale**: Viaggiare attraverso diverse realtà per comprenderne la natura, le leggi e le potenziali interconnessioni.
+- **Analisi delle realtà**: Studiare le caratteristiche uniche di ciascuna dimensione, identificando eventuali anomalie o "dissonanze" che potrebbero indicare un'interferenza esterna.
+- **Modifica selettiva**: In alcuni casi, PROJECT:800a interviene attivamente per correggere anomalie, proteggere la stabilità dimensionale o perseguire obiettivi specifici.
+- **Ricerca delle origini**: Il progetto è motivato dalla ricerca del creatore/creatrice originale, di cui si sono perse le tracce. Le **entità operative** credono che indizi sulla sua identità possano essere nascosti in una delle realtà esplorate.
+
 
 ---
 
