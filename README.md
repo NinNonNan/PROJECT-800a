@@ -69,6 +69,7 @@ Consulta le schede dei principali universi:
 - [Minecraft](minecraft.md)
 - [Green Oaks](greenoaks.md)
 - [Carbon 2185](carbon2185.md)
+- [La Torre Nera](thedarktower.md)
 
 Ogni universo è identificato da un **ID** e classificato in base al grado di intervento possibile.
 
