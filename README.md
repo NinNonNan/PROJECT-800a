@@ -6,72 +6,73 @@ title: PROJECT:800a
 
 > *"I mondi che osserviamo non sono finzione. Sono finestre."*
 
-**PROJECT:800a** è un’organizzazione fittizia dedicata all’esplorazione, analisi e, se necessario, modifica di realtà parallele accessibili attraverso media come videogiochi, film, libri o altre interfacce culturali.
+**PROJECT:800a** è un’organizzazione interdimensionale incaricata dell’esplorazione, analisi e, se necessario, modifica di realtà parallele accessibili attraverso interfacce culturali quali videogiochi, film, libri, giochi di ruolo e altre forme di comunicazione e simulazione.
 
 ---
 
 ## 🌌 Missione
 
-Il **PROJECT:800a** parte dalla premessa che ciò che definiamo "fiction" sia in realtà un portale verso universi reali. Le interazioni con questi ambienti possono alterarne gli equilibri, generando effetti non sempre prevedibili.
+Il **PROJECT:800a** opera sulla base del principio che ciò che comunemente viene interpretato come "fiction" rappresenti, in realtà, l’accesso parziale a universi autentici. Le interazioni con tali ambienti hanno la potenzialità di alterarne la stabilità interna, con conseguenze che possono riverberarsi anche oltre i loro confini.
 
 ---
 
 ## 🧭 Obiettivi
 
 - **Esplorazione Dimensionale**  
-  Viaggiare e documentare le caratteristiche di realtà accessibili.
+  Rilevare e documentare le caratteristiche strutturali, temporali e sociali delle realtà osservabili.
 
 - **Analisi delle Realtà**  
-  Studiare anomalie, incoerenze o dissonanze interne.
+  Raccogliere dati, identificare schemi, riconoscere segnali di dissonanza interna o interferenze.
 
 - **Modifica Selettiva**  
-  Intervenire per ristabilire la coerenza o per indagare elementi ignoti.
+  Attuare interventi mirati per ripristinare la coerenza o studiare anomalie rilevanti.
 
 - **Ricerca delle Origini**  
-  Scoprire chi ha creato il **PROJECT:800a** e con quale scopo.
+  Individuare tracce dell'entità fondatrice del progetto e chiarire le finalità superiori della sua attivazione.
 
 ---
 
 ## 🧨 Concetto di "Dissonanza"
 
-Il termine *dissonanza* definisce ogni anomalia o elemento incoerente rispetto alla realtà osservata:
+Il termine *dissonanza* indica ogni deviazione rilevata rispetto alla coerenza interna di una realtà:
 
-- Glitch, bug, entità fuori contesto
-- Contraddizioni temporali o narrative
-- Violazioni delle leggi fisiche interne
+- Glitch, entità incoerenti, pattern comportamentali anomali  
+- Discontinuità spazio-temporali  
+- Contraddizioni nelle leggi fisiche o narrative  
+- Presenza di vettori esterni non riconducibili alla realtà osservata
 
 ---
 
-## 🧪 Linea di Ricerca: B.E.R. [VAI A...](ber.md)
+## 🧪 Linea di Ricerca: B.E.R. → [Vai al documento completo](ber.md)
 
-> **B.E.R.** – due visioni opposte:
+> **B.E.R.** – Due visioni divergenti dell’intervento multidimensionale:
 
 - **Break Every Reality**  
-  Approccio distruttivo: rompere i mondi per trovare la verità.
+  Analisi attraverso la disgregazione: rompere i mondi per trovare ciò che è nascosto sotto la superficie.
 
 - **Beyond Every Reality**  
-  Approccio trascendente: andare oltre la forma per cercare il creatore.
+  Ricerca trascendente: superare ogni livello apparente per accedere alla sorgente creatrice.
 
 ---
 
-## 🕵️ Entità operative  
-Le **entità operative** di **PROJECT:800a** sono in grado di interagire con realtà parallele. Le loro missioni variano dall'osservazione passiva a interventi strutturali, a seconda del livello di accesso e del contesto dimensionale.
+## 🕵️ Entità Operative  
+
+Le **entità operative** sono agenti riconosciuti e abilitati all’interazione con le realtà parallele. Operano con diversi livelli di accesso, a seconda delle caratteristiche dimensionali e degli obiettivi della missione.
 
 ---
 
-### Obiettivi e scopi
-Le **entità operative** si occupano di:
+### Competenze e Funzioni
 
-- **Esplorazione dimensionale**: Viaggiare attraverso diverse realtà per comprenderne la natura, le leggi e le potenziali interconnessioni.
-- **Analisi delle realtà**: Studiare le caratteristiche uniche di ciascuna dimensione, identificando eventuali anomalie o "dissonanze" che potrebbero indicare un'interferenza esterna.
-- **Modifica selettiva**: In alcuni casi, **PROJECT:800a** interviene attivamente per correggere anomalie, proteggere la stabilità dimensionale o perseguire obiettivi specifici.
-- **Ricerca delle origini**: Il progetto è motivato dalla ricerca del creatore/creatrice originale, di cui si sono perse le tracce. Le **entità operative** credono che indizi sulla sua identità possano essere nascosti in una delle realtà esplorate.
+- **Esplorazione**: Mappatura e osservazione delle realtà individuate.
+- **Analisi**: Rilevazione e classificazione di dissonanze o fenomeni eccezionali.
+- **Intervento**: Azioni mirate a fini sperimentali, di contenimento o di recupero informativo.
+- **Ricerca**: Investigazione sugli archivi oscurati e sul ruolo originario del progetto stesso.
 
 ---
 
-## 📂 Universi Esplorati - [ELENCO COMPLETO](realta.md)
+## 📂 Universi Osservati → [Elenco completo](realta.md)
 
-Consulta le schede dei principali universi:
+Ogni universo è codificato tramite **ID univoco** e classificato per accessibilità, integrità e livello di intervento consentito.
 
 - [Fallout](fallout.md)
 - [The Sims](thesims.md)
@@ -79,21 +80,19 @@ Consulta le schede dei principali universi:
 - [Green Oaks](greenoaks.md)
 - [Carbon 2185](carbon2185.md)
 - [La Torre Nera](thedarktower.md)
-- [No Man's Sky](nomanssky)
+- [No Man's Sky](nomanssky.md)
 - [Il Faro Al Termine Dell'Universo](ilfaroalterminedell'universo.md)
-
-Ogni universo è identificato da un **ID** e classificato in base al grado di intervento possibile.
 
 ---
 
 ## 🧩 Domande Aperte
 
-- Chi ha creato il **PROJECT:800a**?
-- Qual è il limite etico nell’alterare una realtà?
-- Esiste una verità oltre le realtà osservabili?
+- Qual è l’origine del **PROJECT:800a**?
+- In quale punto termina l’etica dell’intervento?
+- Esiste un’unica realtà sorgente? O tutte sono specchi di un’origine dimenticata?
 
 ---
 
-*Se stai leggendo questo, è possibile che tu sia già parte di **PROJECT:800a.** O forse lo sei sempre statə.*
+> *Se stai leggendo questo documento, è probabile che tu sia già parte di PROJECT:800a. O forse lo sei sempre stato.*
 
-👉 [Unisciti al gruppo Telegram](https://t.me/+ViK7RmXBsQIzMTc0) per condividere osservazioni, teorie e segnalare nuove realtà.
+👉 [Unisciti al gruppo Telegram](https://t.me/+ViK7RmXBsQIzMTc0) per condividere dati, teorie operative o segnalazioni dimensionali.
