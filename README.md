@@ -94,4 +94,6 @@ Ogni universo è identificato da un **ID** e classificato in base al grado di in
 
 ---
 
-*Benvenuto. Se stai leggendo questo, potresti già far parte del **PROJECT:800a**.*
+*Se stai leggendo questo, è possibile che tu sia già parte di **PROJECT:800a.** O forse lo sei sempre statə.*
+
+👉 [Unisciti al gruppo Telegram](https://t.me/+ViK7RmXBsQIzMTc0) per condividere osservazioni, teorie e segnalare nuove realtà.
