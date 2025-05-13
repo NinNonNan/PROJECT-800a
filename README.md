@@ -42,7 +42,7 @@ Il termine *dissonanza* definisce ogni anomalia o elemento incoerente rispetto a
 
 ---
 
-## 🧪 Sottoprogetto: B.E.R.
+## 🧪 Linea di Ricerca: B.E.R. [VAI A...](ber.md)
 
 > **B.E.R.** – due visioni opposte:
 
