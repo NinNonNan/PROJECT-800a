@@ -69,7 +69,7 @@ Le **entità operative** si occupano di:
 
 ---
 
-## 📂 Universi Esplorati
+## 📂 Universi Esplorati - [ELENCO COMPLETO](realta.md)
 
 Consulta le schede dei principali universi:
 
