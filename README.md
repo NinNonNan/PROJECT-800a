@@ -64,8 +64,8 @@ Gli agenti di PROJECT:800a sono individui capaci di interagire con le realtà pa
 
 Consulta le schede dei principali universi:
 
-- [Fallout 76](fallout76.md)
-- [The Sims 4](thesims4.md)
+- [Fallout](fallout.md)
+- [The Sims](thesims.md)
 - [Minecraft](minecraft.md)
 - [Green Oaks](greenoaks.md)
 - [Carbon 2185](carbon2185.md)
