@@ -67,7 +67,8 @@ Consulta le schede dei principali universi:
 - [Fallout 76](fallout76.md)
 - [The Sims 4](thesims4.md)
 - [Minecraft](minecraft.md)
-- [Green Oaks RPG](greenoaks.md)
+- [Green Oaks](greenoaks.md)
+- [Carbon 2185](carbon2185.md)
 
 Ogni universo è identificato da un **ID** e classificato in base al grado di intervento possibile.
 
