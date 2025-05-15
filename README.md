@@ -82,6 +82,7 @@ Ogni universo è codificato tramite **ID univoco** e classificato per accessibil
 - [La Torre Nera](thedarktower.md)
 - [No Man's Sky](nomanssky.md)
 - [Il Faro Al Termine Dell'Universo](ilfaroalterminedell'universo.md)
+- [Keyforge](keyforge.md)
 
 ---
 
