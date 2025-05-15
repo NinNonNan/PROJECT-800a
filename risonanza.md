@@ -80,3 +80,5 @@ In questo contesto, la Risonanza dell’agente diventa **il catalizzatore princi
 ---
 
 > _“Ci sono persone per cui la porta tra i mondi è sempre socchiusa. E a volte... basta un soffio.”_
+
+> _"Cerco di aprirti la mente, Neo, ma posso solo indicarti la soglia. Sei tu quello che la deve attraversare."_
