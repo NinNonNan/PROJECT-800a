@@ -93,6 +93,6 @@ Ogni universo è codificato tramite **ID univoco** e classificato per accessibil
 
 ---
 
-> *Se stai leggendo questo documento, è probabile che tu sia già parte di PROJECT:800a. O forse lo sei sempre stato.*
+> *Se stai leggendo questo documento, è probabile che tu sia già parte di PROJECT:800a. O forse lo sei sempre statə.*
 
 👉 [Unisciti al gruppo Telegram](https://t.me/+ViK7RmXBsQIzMTc0) per condividere dati, teorie operative o segnalazioni dimensionali.
