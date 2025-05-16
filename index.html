@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script>
+    const messages = [
+      "PROJECT:800a",
+      "Multidimensional Node",
+      "Observation: ACTIVE"
+    ];
+
+    const glitchChars = "!@#$%^&*()_+{}|:<>?-=[];',./~`";
+
+    function glitchText(text, iterations = 10, delay = 100) {
+      let iteration = 0;
+      const originalText = text;
+      const interval = setInterval(() => {
+        let glitched = '';
+        for (let i = 0; i < originalText.length; i++) {
+          if (Math.random() < 0.5) {
+            glitched += glitchChars.charAt(Math.floor(Math.random() * glitchChars.length));
+          } else {
+            glitched += originalText.charAt(i);
+          }
+        }
+        document.title = glitched;
+        iteration++;
+        if (iteration >= iterations) {
+          clearInterval(interval);
+          document.title = originalText;
+        }
+      }, delay);
+    }
+
+    let currentMessage = 0;
+    setInterval(() => {
+      glitchText(messages[currentMessage]);
+      currentMessage = (currentMessage + 1) % messages.length;
+    }, 3000);
+  </script>
+</head>
+<body>
+  <h1>welcome in PROJECT:800a.</h1>
+  <ul>
+    <li><a href="ABBOTT.md">ABBOTT</a></li>
+    <li><a href="DTC.md">DTC</a></li>
+    <li><a href="DamnatioFondativa.md">Damnatio Fondativa</a></li>
+    <li><a href="README.md">README</a></li>
+    <li><a href="agentiSTORICI.md">Agenti Storici</a></li>
+    <li><a href="appunti.md">Appunti</a></li>
+    <li><a href="ber.md">BER</a></li>
+    <li><a href="ber2vie.md">BER 2 Vie</a></li>
+    <li><a href="creazione.md">Creazione</a></li>
+    <li><a href="damantiom.md">Damantiom</a></li>
+    <li><a href="desc.md">Descrizione</a></li>
+    <li><a href="realta.md">Realtà</a></li>
+    <li><a href="risonanza.md">Risonanza</a></li>
+    <li><a href="trasferimento.md">Trasferimento</a></li>
+  </ul>
+</body>
+</html>
