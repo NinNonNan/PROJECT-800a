@@ -65,6 +65,12 @@ a:hover::after {
   width: 100%;
 }
 
+#content {
+  font-size: 18px;      /* dimensione base più grande */
+  line-height: 1.6;     /* per migliorare la spaziatura */
+  padding: 1em;         /* un po' di padding */
+}
+
 /* Mobile responsive tweaks */
 @media (max-width: 600px) {
   body {
@@ -77,5 +83,9 @@ a:hover::after {
 
   li {
     font-size: 1rem;
+  }
+
+  #content {
+    font-size: 22px;    /* ancora più grande su schermi piccoli */
   }
 }
