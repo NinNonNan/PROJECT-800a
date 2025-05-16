@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Viewer - PROJECT:800a</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <h1 id="title">Caricamento...</h1>
+  <div id="markdown-content">In attesa del contenuto...</div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const file = params.get("file");
+
+    if (file) {
+      document.getElementById('title').textContent = file.replace('.md', '');
+
+      fetch(file)
+        .then(res => {
+          if (!res.ok) throw new Error("File non trovato");
+          return res.text();
+        })
+        .then(text => {
+          document.getElementById('markdown-content').innerHTML = marked.parse(text);
+        })
+        .catch(err => {
+          document.getElementById('markdown-content').textContent = "Errore nel caricamento del file.";
+          console.error(err);
+        });
+    } else {
+      document.getElementById('markdown-content').textContent = "Nessun file specificato.";
+    }
+  </script>
+</body>
+</html>
