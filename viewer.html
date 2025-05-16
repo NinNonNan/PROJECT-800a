@@ -1,49 +1,28 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PROJECT:800a Viewer</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Viewer</title>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
-  <header>
-    <h1 id="page-title">PROJECT:800a</h1>
-    <nav>
-      <ul id="menu">
-        <!-- Il menu verrà caricato dinamicamente -->
-      </ul>
-    </nav>
-  </header>
+  <div id="content">Caricamento...</div>
 
-  <main id="content">
-    <p>Caricamento...</p>
-  </main>
-
-  <script src="menu-loader.js"></script>
   <script>
-    // Estrae il parametro "file" dall'URL
     const params = new URLSearchParams(window.location.search);
     const file = params.get("file");
 
     if (file) {
-      fetch(`/markdown/${file}`)
-        .then(res => {
-          if (!res.ok) throw new Error("File non trovato");
-          return res.text();
-        })
-        .then(markdown => {
-          const html = marked.parse(markdown);
-          document.getElementById("content").innerHTML = html;
-          document.getElementById("page-title").textContent = file.replace('.md', '');
-          document.title = `PROJECT:800a - ${file}`;
+      fetch(`md/${file}`)
+        .then(res => res.text())
+        .then(text => {
+          document.getElementById("content").innerHTML = marked.parse(text);
         })
         .catch(err => {
-          document.getElementById("content").innerHTML = `<p>Errore nel caricamento: ${err.message}</p>`;
+          document.getElementById("content").textContent = "Errore nel caricamento del file.";
         });
     } else {
-      document.getElementById("content").innerHTML = "<p>Nessun file specificato.</p>";
+      document.getElementById("content").textContent = "Nessun file specificato.";
     }
   </script>
 </body>
