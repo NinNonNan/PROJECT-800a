@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>PROJECT:800a</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <h1>PROJECT:800a</h1>
+  <div id="markdown-content">Caricamento contenuto...</div>
+
+  <script>
+    fetch('readme.md')
+      .then(response => response.text())
+      .then(markdown => {
+        document.getElementById('markdown-content').innerHTML = marked.parse(markdown);
+      })
+      .catch(error => {
+        document.getElementById('markdown-content').innerText = 'Errore nel caricamento del file.';
+        console.error('Errore nel caricamento:', error);
+      });
+  </script>
+</body>
+</html>
