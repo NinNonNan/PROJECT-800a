@@ -4,6 +4,16 @@
   <meta charset="UTF-8" />
   <title>Viewer</title>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      max-width: 800px;
+    }
+    #content {
+      white-space: pre-wrap; /* per mantenere spazi e a capo */
+    }
+  </style>
 </head>
 <body>
   <div id="content">Caricamento...</div>
@@ -14,12 +24,16 @@
 
     if (file) {
       fetch(`md/${file}`)
-        .then(res => res.text())
+        .then(res => {
+          if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+          return res.text();
+        })
         .then(text => {
           document.getElementById("content").innerHTML = marked.parse(text);
         })
         .catch(err => {
           document.getElementById("content").textContent = "Errore nel caricamento del file.";
+          console.error(err);
         });
     } else {
       document.getElementById("content").textContent = "Nessun file specificato.";
