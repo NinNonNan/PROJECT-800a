@@ -1,26 +1,20 @@
-const fs = require("fs");
 const path = require("path");
+const fs = require("fs");
 
 exports.handler = async function(event, context) {
   try {
-    // Usa path relativo alla cartella di deploy
-    // Supponiamo che i tuoi .md siano nella cartella 'public/md'
-    const dirPath = path.join(__dirname, "..", "..", "public", "md");
-
-    // Leggi i file nella cartella
+    const dirPath = path.resolve(__dirname, "../../public/md");
     const files = fs.readdirSync(dirPath).filter(file => file.endsWith(".md"));
-
-    // Torna array come JSON
+    
     return {
       statusCode: 200,
       body: JSON.stringify(files)
     };
-
   } catch (error) {
-    // In caso di errore, ritorna errore con messaggio
+    console.error("Errore nella funzione:", error);
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: error.message }),
+      body: JSON.stringify({ error: error.message })
     };
   }
 };
