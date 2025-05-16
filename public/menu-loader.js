@@ -2,22 +2,29 @@ document.addEventListener("DOMContentLoaded", async () => {
   const menu = document.getElementById("menu");
 
   try {
-    const response = await fetch("/.netlify/functions/listFiles");
-    const files = await response.json();
+    const res = await fetch("/.netlify/functions/listFiles");
+    if (!res.ok) {
+      throw new Error(`Errore HTTP ${res.status}`);
+    }
 
-    if (!Array.isArray(files)) throw new Error("Risposta inattesa");
+    const files = await res.json();
+    if (!Array.isArray(files)) {
+      throw new Error("Risposta inattesa");
+    }
 
+    menu.innerHTML = "";
     files.forEach(file => {
-      const name = file.replace(".md", "");
+      const name = file.replace(".md", "").replace(/[-_]/g, " ");
       const li = document.createElement("li");
-      const a = document.createElement("a");
-      a.href = `viewer.html?file=${encodeURIComponent(file)}`;
-      a.textContent = name;
-      li.appendChild(a);
+      const link = document.createElement("a");
+      link.href = `viewer.html?file=${encodeURIComponent(file)}`;
+      link.textContent = name;
+      li.appendChild(link);
       menu.appendChild(li);
     });
+
   } catch (err) {
+    menu.innerHTML = `<li>Errore nel caricamento del menu: ${err.message}</li>`;
     console.error("Errore nel caricamento del menu:", err);
-    menu.innerHTML = "<li>Errore nel caricamento del menu</li>";
   }
 });
