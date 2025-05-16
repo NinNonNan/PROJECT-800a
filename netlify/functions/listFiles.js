@@ -3,10 +3,8 @@ const path = require("path");
 
 exports.handler = async () => {
   try {
-    // Percorso relativo corretto alla cartella "public/md"
-    const dirPath = path.resolve(__dirname, "../../public/md");
+    const dirPath = path.join(__dirname, "md");
 
-    // Leggi i file nella cartella
     const files = fs.readdirSync(dirPath).filter(file => file.endsWith(".md"));
 
     return {
@@ -23,4 +21,3 @@ exports.handler = async () => {
     };
   }
 };
-
