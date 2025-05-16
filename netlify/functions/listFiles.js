@@ -3,7 +3,8 @@ const path = require("path");
 
 exports.handler = async () => {
   try {
-    const dirPath = path.join(__dirname, "md");
+    // Percorso corretto alla cartella md inclusa nella build
+    const dirPath = path.resolve(__dirname, "md");
 
     const files = fs.readdirSync(dirPath).filter(file => file.endsWith(".md"));
 
