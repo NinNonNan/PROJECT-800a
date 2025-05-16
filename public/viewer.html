@@ -4,16 +4,6 @@
   <meta charset="UTF-8" />
   <title>Viewer</title>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      max-width: 800px;
-    }
-    #content {
-      white-space: pre-wrap; /* per mantenere spazi e a capo */
-    }
-  </style>
 </head>
 <body>
   <div id="content">Caricamento...</div>
@@ -23,17 +13,16 @@
     const file = params.get("file");
 
     if (file) {
-      fetch(`md/${file}`)
+      fetch(`/.netlify/functions/getMdFile?file=${encodeURIComponent(file)}`)
         .then(res => {
-          if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+          if (!res.ok) throw new Error('File non trovato o errore nel caricamento');
           return res.text();
         })
         .then(text => {
           document.getElementById("content").innerHTML = marked.parse(text);
         })
         .catch(err => {
-          document.getElementById("content").textContent = "Errore nel caricamento del file.";
-          console.error(err);
+          document.getElementById("content").textContent = "Errore nel caricamento del file: " + err.message;
         });
     } else {
       document.getElementById("content").textContent = "Nessun file specificato.";
