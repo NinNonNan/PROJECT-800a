@@ -1,26 +1,23 @@
-fetch("/.netlify/functions/listFiles")
-  .then(res => {
-    if (!res.ok) throw new Error("Errore HTTP: " + res.status);
-    return res.json();
-  })
-  .then(files => {
-    if (!Array.isArray(files)) {
-      throw new Error("Risposta non è un array");
-    }
-    const menuList = document.getElementById("menu-list");
-    menuList.innerHTML = ""; // pulisci lista
+document.addEventListener("DOMContentLoaded", async () => {
+  const menu = document.getElementById("menu");
+
+  try {
+    const response = await fetch("/.netlify/functions/listFiles");
+    const files = await response.json();
+
+    if (!Array.isArray(files)) throw new Error("Risposta inattesa");
 
     files.forEach(file => {
+      const name = file.replace(".md", "");
       const li = document.createElement("li");
       const a = document.createElement("a");
       a.href = `viewer.html?file=${encodeURIComponent(file)}`;
-      a.textContent = file.replace(".md", "");
+      a.textContent = name;
       li.appendChild(a);
-      menuList.appendChild(li);
+      menu.appendChild(li);
     });
-  })
-  .catch(err => {
+  } catch (err) {
     console.error("Errore nel caricamento del menu:", err);
-    const menuList = document.getElementById("menu-list");
-    menuList.innerHTML = `<li>Errore nel caricamento del menu: ${err.message}</li>`;
-  });
+    menu.innerHTML = "<li>Errore nel caricamento del menu</li>";
+  }
+});
