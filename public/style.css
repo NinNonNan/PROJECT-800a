@@ -86,6 +86,6 @@ a:hover::after {
   }
 
   #content {
-    font-size: 22px;    /* ancora più grande su schermi piccoli */
+    font-size: 32px;    /* ancora più grande su schermi piccoli */
   }
 }
