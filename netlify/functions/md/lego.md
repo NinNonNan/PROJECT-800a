@@ -32,6 +32,25 @@ Ogni metodo determina un differente livello di intervento e profondità di acces
 
 ---
 
+### 🌀 Dispositivo di Immedesimazione  
+**Nome in codice:** D.I.M.-800a ("Dimensional Interface Matrix")  
+**Base tecnologica:** LEGO Dimensional Hub (modificato)  
+**Classe:** Interfaccia di Trasferimento Cognitivo + Assemblatore Dimensionale  
+
+> Il D.I.M.-800a è un dispositivo ibrido originariamente concepito come portale per personaggi videoludici. I tecnici del PROJECT:800a lo hanno potenziato integrandovi un modulo di *traduzione ontologica*, in grado di convertire l’identità dell’operatore in una forma compatibile con l’universo LEGO.
+
+#### Funzioni:
+- **Proiezione Avatarica**: Trasferisce la coscienza operativa all'interno di una minifigure compatibile
+- **Assemblaggio Dimensionale**: Permette di modificare lo scenario LEGO in tempo reale tramite costrutti mentali o controller fisici
+- **Connessione a Multiverso LEGO**: Accesso simultaneo a mondi separati (City, Ninjago, Bionicle, etc.)
+
+#### Rischi:
+- **Perdita di continuità identitaria** in caso di eccessiva permanenza
+- **"Blocco costruttivo"**: stato mentale paralizzante dovuto a mancanza di creatività
+- **Cross-sovrapposizione** con mondi ad alta densità narrativa (es. LEGO Batman + LOTR)
+
+---
+
 ## 🧪 Fenomeni di Dissonanza
 
 - **Costruzioni Paradossali**: Strutture impossibili che funzionano
