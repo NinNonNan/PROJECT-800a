@@ -6,31 +6,12 @@
   <link rel="stylesheet" href="style.css" />
   <script src="glitch-title.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="viewer.js" defer></script> <!-- ✅ Script spostato all'esterno -->
 </head>
 <body>
   <div id="content">Caricamento...</div>
   <div id="back-home" style="margin-top: 2em;">
     <a href="/">← Torna alla Home</a>
   </div>
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const file = params.get("file");
-
-    if (file) {
-      fetch(`/.netlify/functions/getMdFile?file=${encodeURIComponent(file)}`)
-        .then(res => {
-          if (!res.ok) throw new Error('File non trovato o errore nel caricamento');
-          return res.text();
-        })
-        .then(text => {
-          document.getElementById("content").innerHTML = marked.parse(text);
-        })
-        .catch(err => {
-          document.getElementById("content").textContent = "Errore nel caricamento del file: " + err.message;
-        });
-    } else {
-      document.getElementById("content").textContent = "Nessun file specificato.";
-    }
-  </script>
 </body>
 </html>
