@@ -12,6 +12,11 @@ document.addEventListener("DOMContentLoaded", async () => {
       throw new Error("Risposta inattesa");
     }
 
+    // Ordina i file alfabeticamente (ignorando maiuscole/minuscole)
+    files.sort((a, b) =>
+      a.toLowerCase().localeCompare(b.toLowerCase())
+    );
+
     menu.innerHTML = "";
     files.forEach(file => {
       const name = file.replace(".md", "").replace(/[-_]/g, " ");
