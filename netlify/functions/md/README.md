@@ -81,8 +81,9 @@ Ogni universo è codificato tramite **ID univoco** e classificato per accessibil
 - [Carbon 2185](carbon2185.md)
 - [La Torre Nera](thedarktower.md)
 - [No Man's Sky](nomanssky.md)
-- [Il Faro Al Termine Dell'Universo](ilfaroalterminedell'universo.md)
+- [Il Faro Al Termine Dell'Universo](ilfaroalterminedelluniverso.md)
 - [Keyforge](keyforge.md)
+- [LEGO](lego.md)
 
 ---
 
