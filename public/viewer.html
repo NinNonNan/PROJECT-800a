@@ -23,7 +23,19 @@
           return res.text();
         })
         .then(text => {
-          document.getElementById("content").innerHTML = marked.parse(text);
+          // Ordina alfabeticamente ogni lista markdown non numerata
+          const sortedText = text.replace(
+            /^((?:\s*[-*+]\s+.*\n?)+)/gm,
+            (list) => {
+              return list
+                .trim()
+                .split(/\r?\n/)
+                .sort((a, b) => a.replace(/^[-*+]\s*/, '').localeCompare(b.replace(/^[-*+]\s*/, '')))
+                .join('\n') + '\n';
+            }
+          );
+        
+          document.getElementById("content").innerHTML = marked.parse(sortedText);
         })
         .catch(err => {
           document.getElementById("content").textContent = "Errore nel caricamento del file: " + err.message;
