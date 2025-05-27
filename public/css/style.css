@@ -71,6 +71,58 @@ a:hover::after {
   padding: 1em;         /* un po' di padding */
 }
 
+form {
+  max-width: 600px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #111;
+  padding: 2rem;
+  border: 2px solid #00ff66;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #00ff6633;
+}
+
+form label {
+  font-weight: bold;
+  color: #00ff66;
+}
+
+form input,
+form textarea {
+  background-color: #000;
+  color: #00ff66;
+  border: 1px solid #00ff66;
+  padding: 0.75rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #66ffcc;
+  box-shadow: 0 0 5px #00ff66;
+}
+
+form button {
+  background-color: #00ff66;
+  color: #000;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  padding: 0.75rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form button:hover {
+  background-color: #33ff99;
+  box-shadow: 0 0 10px #00ff66, 0 0 20px #00ff66;
+}
+
 /* Mobile responsive tweaks */
 @media (max-width: 600px) {
   body {
