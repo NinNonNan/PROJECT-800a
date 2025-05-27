@@ -21,6 +21,8 @@ _Cos’era successo? Avevo davvero superato una soglia? Era quello il confine fr
 
 _E se ogni volta che completiamo qualcosa... in qualche modo, una parte di noi resta lì dentro?_
 
+Memorie dell'agnete NihilSebup982, il primo agente ad ipotizzare la possibile interazione con l'insieme fisico delle costruzioni LEGO. Da questa priam esperienza si comincia ad ipotizzare la creazione di un'interfaccia tecnlogica che potesse favorire il collegamento in maniera più stabile e meno aleatoria.
+
 
 ---
 
