@@ -85,10 +85,23 @@ Ogni metodo determina un differente livello di intervento e profondità di acces
 
 ## 🔎 Linee di Ricerca Attive
 
-- **Archeologia Mattonica**: Ricerca di strutture perdute
-- **Coerenza Costruttiva**: Studio delle regole che stabilizzano una dimensione
-- **Simulazioni Autoriflessive**: Entità consapevoli della propria natura costruttiva
-- **Il Primo Mattoncino**: Mattoncino originario teorico, contenente tutte le forme potenziali
+- **Archeologia Mattonica**  
+  Ricerca di strutture perdute e dimenticate, sepolte in strati dimensionali instabili.
+
+- **Coerenza Costruttiva**  
+  Studio delle regole logiche e fisiche che stabilizzano una micro-realtà costruttiva.
+
+- **Simulazioni Autoriflessive**  
+  Indagine su entità consapevoli della propria natura modulare e artificiale.
+
+- **Il Primo Mattoncino**  
+  Teorizzazione dell’esistenza di un mattoncino originario contenente in sé tutte le forme potenziali.
+
+- **Memoria Plastica**  
+  Derivata dalla teoria della "memoria dell'acqua", ipotizza che ogni mattoncino conservi tracce residue dei propri stati costruttivi precedenti.  
+  Attraverso tecniche meditative avanzate, alcuni agenti sarebbero in grado di "vedere" le vite passate dei singoli pezzi, osservando così infiniti mondi sovrapposti a ogni costruzione.  
+  Ogni assemblaggio sarebbe quindi un nodo in una rete di realtà stratificate, potenzialmente accessibili attraverso risonanza plastico-mentale.
+
 
 ---
 
