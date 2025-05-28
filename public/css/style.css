@@ -139,30 +139,30 @@ form button:hover {
 /* Stile per il footer disclaimer */
 #footer-disclaimer {
   position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  max-width: 350px;
-  background-color: rgba(0, 128, 64, 0.85);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  background-color: rgba(0, 128, 64, 0.85); /* verde scuro semi-trasparente */
   color: #00ff66;
-  padding: 1rem 1.5rem;
-  border: 2px solid #00ff66;
-  border-radius: 8px;
-  box-shadow: 0 0 15px #00ff66cc;
+  padding: 1rem 2rem;
+  border-top: 2px solid #00ff66;
+  box-shadow: 0 -2px 15px #00ff66cc;
   font-family: "Courier New", Courier, monospace;
   font-size: 0.9rem;
   z-index: 9999;
-  position: fixed;
+  box-sizing: border-box;
 }
 
 #footer-close-btn {
   position: absolute;
   top: 0.3rem;
-  right: 0.5rem;
+  right: 1rem;
   background: transparent;
   border: none;
   color: #00ff66;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   cursor: pointer;
   font-family: monospace;
 }
