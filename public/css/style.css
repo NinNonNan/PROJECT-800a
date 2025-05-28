@@ -136,6 +136,20 @@ form button:hover {
   font-style: italic;
 }
 
+/* Stile per il footer disclaimer */
+footer.site-disclaimer {
+  background-color: #222;       /* sfondo scuro */
+  color: #eee;                  /* testo chiaro */
+  padding: 15px 20px;           /* spazio interno */
+  text-align: center;           /* testo centrato */
+  font-size: 0.9em;             /* dimensione leggermente ridotta */
+  font-family: Arial, sans-serif;
+  border-top: 1px solid #444;   /* linea sopra il footer */
+  box-shadow: inset 0 1px 3px rgba(255,255,255,0.05);
+  user-select: none;            /* impedisce selezione testo accidentale */
+  margin-top: 40px;             /* margine sopra il footer */
+}
+
 /* Mobile responsive tweaks */
 @media (max-width: 600px) {
   body {
