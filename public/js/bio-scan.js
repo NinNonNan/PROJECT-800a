@@ -1,4 +1,4 @@
-const DATA_URL = 'bio-feedback.json';  // Percorso al file JSON esterno
+const DATA_URL = 'data/bio-feedback.json';  // Percorso al file JSON esterno
 const REFRESH_INTERVAL = 10000; // Intervallo aggiornamento in ms (10 secondi)
 
 async function fetchData() {
