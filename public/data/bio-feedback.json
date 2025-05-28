@@ -67,8 +67,14 @@
     "name": "Livello energetico dei chakra",
     "abbr": "LEC",
     "description": "Misura del livello di apertura o energia dei sette chakra principali.",
-    "min": 0,
-    "max": 100,
-    "unit": "per chakra"
+    "chakras": [
+      { "name": "Chakra della Radice", "min": 0, "max": 100 },
+      { "name": "Chakra Sacrale", "min": 0, "max": 100 },
+      { "name": "Chakra del Plesso Solare", "min": 0, "max": 100 },
+      { "name": "Chakra del Cuore", "min": 0, "max": 100 },
+      { "name": "Chakra della Gola", "min": 0, "max": 100 },
+      { "name": "Chakra del Terzo Occhio", "min": 0, "max": 100 },
+      { "name": "Chakra della Corona", "min": 0, "max": 100 }
+    ]
   }
 ]
