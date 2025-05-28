@@ -137,12 +137,12 @@ form button:hover {
 }
 
 /* Stile per il footer disclaimer */
-.footer.site-disclaimer {
+#footer-disclaimer {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
   max-width: 350px;
-  background-color: rgba(0, 128, 64, 0.85); /* verde scuro semi-trasparente */
+  background-color: rgba(0, 128, 64, 0.85);
   color: #00ff66;
   padding: 1rem 1.5rem;
   border: 2px solid #00ff66;
@@ -151,10 +151,7 @@ form button:hover {
   font-family: "Courier New", Courier, monospace;
   font-size: 0.9rem;
   z-index: 9999;
-}
-
-#footer-disclaimer p {
-  margin: 0 0 0.5rem 0;
+  position: fixed;
 }
 
 #footer-close-btn {
