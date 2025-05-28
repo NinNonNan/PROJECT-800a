@@ -137,17 +137,23 @@ form button:hover {
 }
 
 /* Stile per il footer disclaimer */
-footer.site-disclaimer {
-  background-color: #222;       /* sfondo scuro */
-  color: #eee;                  /* testo chiaro */
-  padding: 15px 20px;           /* spazio interno */
-  text-align: center;           /* testo centrato */
-  font-size: 0.9em;             /* dimensione leggermente ridotta */
-  font-family: Arial, sans-serif;
-  border-top: 1px solid #444;   /* linea sopra il footer */
-  box-shadow: inset 0 1px 3px rgba(255,255,255,0.05);
-  user-select: none;            /* impedisce selezione testo accidentale */
-  margin-top: 40px;             /* margine sopra il footer */
+.footer.site-disclaimer {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: #111;
+  padding: 2rem;
+  border: 2px solid #00ff66;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #00ff6633;
+  color: #00ff66;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.footer-disclaimer strong {
+  font-weight: bold;
+  color: #00ff66;
 }
 
 /* Mobile responsive tweaks */
