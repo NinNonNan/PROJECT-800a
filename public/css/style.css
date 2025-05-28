@@ -1,191 +1,190 @@
-/* style.css */
-
+/* ===== Body & Global Styles ===== */
 body {
-  background-color: #000;
-  color: #00ff66;
-  font-family: "Courier New", Courier, monospace;
-  margin: 0;
-  padding: 1rem;
-  line-height: 1.6;
+  background-color: #000;                   /* Sfondo nero per effetto "cyber" o terminale */
+  color: #00ff66;                           /* Testo verde brillante, colore principale */
+  font-family: "Courier New", Courier, monospace; /* Font monospace per stile retrò/tech */
+  margin: 0;                               /* Rimuove margini predefiniti del browser */
+  padding: 1rem;                           /* Padding interno del body */
+  line-height: 1.6;                        /* Interlinea per migliorare leggibilità */
 }
 
+/* ===== Heading ===== */
 h1 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 2rem;
+  font-size: 2.5rem;                       /* Titolo grande e impattante */
+  text-align: center;                      /* Centra il testo */
+  margin-bottom: 2rem;                     /* Spazio sotto l'intestazione */
 }
 
+/* ===== Liste (ul, li) ===== */
 ul {
-  list-style-type: none;
-  padding: 0;
-  max-width: 600px;
-  margin: 0 auto;
+  list-style-type: none;                   /* Rimuove i bullet points */
+  padding: 0;                             /* Rimuove padding predefinito */
+  max-width: 600px;                       /* Limita la larghezza per una migliore leggibilità */
+  margin: 0 auto;                        /* Centra la lista orizzontalmente */
 }
 
 li {
-  margin: 0.5rem 0;
+  margin: 0.5rem 0;                       /* Spazio verticale tra gli elementi della lista */
 }
 
+/* ===== Link (a) e loro effetti ===== */
+/* Stile base per i link */
 a {
-  color: #00ff66;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  color: #00ff66;                        /* Colore verde brillante */
+  text-decoration: none;                 /* Nessuna sottolineatura */
+  font-weight: bold;                     /* Grassetto per risalto */
+  position: relative;                    /* Necessario per posizionare ::after */
+  transition: all 0.3s ease;             /* Transizione fluida per hover */
 }
 
-a:hover {
-  color: #33ff99;
-}
-
-a {
-  color: #00ff66;
-  text-decoration: none;
-  font-weight: bold;
-  position: relative;
-  transition: all 0.3s ease;
-}
-
+/* Decorazione sottolineata animata */
 a::after {
-  content: '';
-  position: absolute;
+  content: '';                          /* Contenuto vuoto, serve per la linea sottostante */
+  position: absolute;                   /* Posizionato rispetto a link (relative) */
   left: 0;
-  bottom: -2px;
-  width: 0;
-  height: 2px;
-  background-color: #00ff66;
-  transition: width 0.3s ease;
+  bottom: -2px;                        /* Posizionato leggermente sotto il testo */
+  width: 0;                           /* Inizialmente la linea non si vede */
+  height: 2px;                        /* Altezza della linea */
+  background-color: #00ff66;           /* Colore verde */
+  transition: width 0.3s ease;         /* Animazione larghezza linea */
 }
 
+/* Hover sui link: cambia colore e aggiunge ombra luminosa */
 a:hover {
-  color: #66ffcc;
-  text-shadow: 0 0 5px #00ff66, 0 0 10px #00ff66;
+  color: #66ffcc;                      /* Verde più chiaro */
+  text-shadow: 0 0 5px #00ff66, 0 0 10px #00ff66; /* Bagliore verde */
 }
 
+/* Al passaggio del mouse si estende la linea sottostante */
 a:hover::after {
-  width: 100%;
+  width: 100%;                        /* Linea si estende a tutta la larghezza del link */
 }
 
+/* ===== Contenuto principale (#content) ===== */
 #content {
-  font-size: 18px;      /* dimensione base più grande */
-  line-height: 1.6;     /* per migliorare la spaziatura */
-  padding: 1em;         /* un po' di padding */
+  font-size: 18px;                    /* Dimensione testo leggermente più grande della norma */
+  line-height: 1.6;                  /* Line-height per migliorare la leggibilità */
+  padding: 1em;                      /* Padding interno per distanziare il testo dai bordi */
 }
 
+/* ===== Form e campi input ===== */
 form {
-  max-width: 600px;
-  margin: 2rem auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  background-color: #111;
-  padding: 2rem;
-  border: 2px solid #00ff66;
-  border-radius: 5px;
-  box-shadow: 0 0 10px #00ff6633;
+  max-width: 600px;                  /* Larghezza massima form per migliore lettura */
+  margin: 2rem auto;                 /* Spazio verticale e centratura orizzontale */
+  display: flex;                    /* Layout flessibile */
+  flex-direction: column;           /* Impilamento verticale */
+  gap: 1rem;                       /* Spaziatura tra gli elementi del form */
+  background-color: #111;            /* Sfondo scuro leggermente più chiaro del body */
+  padding: 2rem;                    /* Padding interno */
+  border: 2px solid #00ff66;        /* Bordo verde brillante */
+  border-radius: 5px;               /* Angoli arrotondati */
+  box-shadow: 0 0 10px #00ff6633;  /* Ombra molto leggera e verde */
 }
 
 form label {
-  font-weight: bold;
-  color: #00ff66;
+  font-weight: bold;                /* Grassetto per chiarezza */
+  color: #00ff66;                  /* Colore verde per consistenza */
 }
 
 form input,
 form textarea {
-  background-color: #000;
-  color: #00ff66;
-  border: 1px solid #00ff66;
-  padding: 0.75rem;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 1rem;
-  resize: vertical;
+  background-color: #000;           /* Sfondo nero uniforme */
+  color: #00ff66;                  /* Testo verde brillante */
+  border: 1px solid #00ff66;        /* Bordo verde sottile */
+  padding: 0.75rem;                /* Spaziatura interna comoda */
+  font-family: "Courier New", Courier, monospace; /* Font coerente */
+  font-size: 1rem;                 /* Dimensione leggibile */
+  resize: vertical;                /* Permette di ridimensionare verticalmente il textarea */
 }
 
 form input:focus,
 form textarea:focus {
-  outline: none;
-  border-color: #66ffcc;
-  box-shadow: 0 0 5px #00ff66;
+  outline: none;                   /* Rimuove il bordo blu default di focus */
+  border-color: #66ffcc;           /* Colore bordo più chiaro al focus */
+  box-shadow: 0 0 5px #00ff66;    /* Bagliore verde al focus */
 }
 
 form button {
-  background-color: #00ff66;
-  color: #000;
+  background-color: #00ff66;        /* Sfondo verde brillante */
+  color: #000;                    /* Testo nero per contrasto */
   font-weight: bold;
   font-family: "Courier New", Courier, monospace;
   padding: 0.75rem;
-  border: none;
+  border: none;                   /* Nessun bordo */
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 form button:hover {
-  background-color: #33ff99;
-  box-shadow: 0 0 10px #00ff66, 0 0 20px #00ff66;
+  background-color: #33ff99;       /* Verde più chiaro al passaggio del mouse */
+  box-shadow: 0 0 10px #00ff66, 0 0 20px #00ff66; /* Forte bagliore verde */
 }
 
+/* ===== Blocco introduttivo (#intro) ===== */
 #intro {
-  background-color: #111;
-  border-left: 4px solid #00ff66;
+  background-color: #111;          /* Sfondo scuro */
+  border-left: 4px solid #00ff66; /* Bordo verticale verde a sinistra */
   padding: 1rem 1.5rem;
   margin: 1rem auto 2rem;
-  max-width: 800px;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #00ff66;
-  box-shadow: 0 0 10px #00ff6622;
-  font-style: italic;
+  max-width: 800px;               /* Larghezza massima per migliore leggibilità */
+  font-size: 1.1rem;             /* Dimensione leggermente più grande del testo normale */
+  line-height: 1.7;              /* Line-height per migliore leggibilità */
+  color: #00ff66;                /* Colore testo verde */
+  box-shadow: 0 0 10px #00ff6622; /* Ombra molto leggera verde */
+  font-style: italic;            /* Testo in corsivo */
 }
 
-/* Stile per il footer disclaimer */
+/* ===== Footer disclaimer (fixed in bottom) ===== */
 #footer-disclaimer {
-  position: fixed;
+  position: fixed;               /* Posizionato fisso in basso */
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 100%;                  /* Occupa tutta la larghezza della finestra */
   max-width: 100%;
-  background-color: rgba(0, 128, 64, 0.85); /* verde scuro semi-trasparente */
-  color: #00ff66;
-  padding: 1rem 2rem;
-  border-top: 2px solid #00ff66;
-  box-shadow: 0 -2px 15px #00ff66cc;
+  background-color: rgba(0, 128, 64, 0.85); /* Verde scuro semi-trasparente */
+  color: #00ff66;               /* Testo verde brillante */
+  padding: 1rem 2rem;           /* Spaziatura interna generosa */
+  border-top: 2px solid #00ff66; /* Bordo verde in alto per evidenziare il footer */
+  box-shadow: 0 -2px 15px #00ff66cc; /* Ombra verso l'alto per separarlo dal contenuto sottostante */
   font-family: "Courier New", Courier, monospace;
-  font-size: 0.9rem;
-  z-index: 9999;
-  box-sizing: border-box;
+  font-size: 0.9rem;            /* Dimensione testo un po' più piccola */
+  z-index: 9999;                /* Assicura che sia sopra tutti gli altri elementi */
+  box-sizing: border-box;       /* Padding incluso nella larghezza */
 }
 
+/* Bottone di chiusura X nel footer */
 #footer-close-btn {
-  position: absolute;
-  top: 0.3rem;
-  right: 1rem;
-  background: transparent;
-  border: none;
-  color: #00ff66;
+  position: absolute;           /* Posizione assoluta rispetto al footer */
+  top: 0.3rem;                 /* Distanza dal bordo superiore */
+  right: 1rem;                 /* Distanza dal bordo destro */
+  background: transparent;      /* Nessuno sfondo */
+  border: none;                /* Nessun bordo */
+  color: #00ff66;              /* Colore verde */
   font-weight: bold;
-  font-size: 1.4rem;
-  cursor: pointer;
+  font-size: 1.4rem;           /* Dimensione della X più grande */
+  cursor: pointer;             /* Cursore a mano per indicare cliccabilità */
   font-family: monospace;
 }
 
 #footer-close-btn:hover {
-  color: #33ff99;
+  color: #33ff99;              /* Verde più chiaro al passaggio del mouse */
 }
 
-/* Mobile responsive tweaks */
+/* ===== Responsive tweaks per dispositivi mobili ===== */
 @media (max-width: 600px) {
   body {
-    padding: 0.5rem;
+    padding: 0.5rem;            /* Meno padding su schermi piccoli */
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2rem;            /* Titolo leggermente più piccolo per piccoli schermi */
   }
 
   li {
-    font-size: 1rem;
+    font-size: 1rem;            /* Testo lista più leggibile su mobile */
   }
 
   #content {
-    font-size: 32px;    /* ancora più grande su schermi piccoli */
+    font-size: 32px;            /* Testo molto grande su mobile per accessibilità */
   }
 }
