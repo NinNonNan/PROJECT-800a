@@ -3,54 +3,72 @@
     "name": "Unità Bovis",
     "abbr": "UB",
     "description": "Supposta misura della vitalità energetica dell’individuo. Valori superiori a 6.500 UB indicano alta energia positiva.",
-    "typicalRange": "5000 - 7000"
+    "min": 5000,
+    "max": 7000,
+    "unit": "UB"
   },
   {
     "name": "Frequenza di risonanza corporea",
     "abbr": "FRC",
     "description": "Frequenza naturale di parti del corpo, utilizzata per valutare squilibri energetici o di salute.",
-    "typicalRange": "0.5 - 50 Hz"
+    "min": 0.5,
+    "max": 50,
+    "unit": "Hz"
   },
   {
     "name": "Coerenza elettromagnetica cerebrale",
     "abbr": "CEC",
     "description": "Misura ipotetica dello stato mentale tramite coerenza delle onde cerebrali rilevate con biofeedback.",
-    "typicalRange": "0 - 100 (indice)"
+    "min": 0,
+    "max": 100,
+    "unit": "indice"
   },
   {
     "name": "Indice di coscienza globale",
     "abbr": "ICG",
     "description": "Valore simbolico che rappresenta l’influenza o lo stato della coscienza collettiva su un individuo.",
-    "typicalRange": "0 - 1000"
+    "min": 0,
+    "max": 1000,
+    "unit": ""
   },
   {
     "name": "Energia orgonica personale",
     "abbr": "EOP",
     "description": "Livello di energia orgonica accumulata nel corpo secondo la teoria di Wilhelm Reich.",
-    "typicalRange": "0 - 100"
+    "min": 0,
+    "max": 100,
+    "unit": ""
   },
   {
     "name": "Polarità energetica personale",
     "abbr": "PEP",
     "description": "Misura dell’equilibrio tra polarità energetiche positive e negative dell’individuo.",
-    "typicalRange": "-50 (negativa) a +50 (positiva)"
+    "min": -50,
+    "max": 50,
+    "unit": ""
   },
   {
     "name": "Scala di coscienza (Hawkins)",
     "abbr": "SC",
     "description": "Scala teorica che classifica il livello di coscienza da 0 (vergogna) a 1000 (illuminazione).",
-    "typicalRange": "0 - 1000"
+    "min": 0,
+    "max": 1000,
+    "unit": ""
   },
   {
     "name": "Indice di aura",
     "abbr": "IA",
     "description": "Valutazione dell’intensità e colore dell’aura energetica della persona, spesso tramite fotografia Kirlian.",
-    "typicalRange": "1 - 10"
+    "min": 1,
+    "max": 10,
+    "unit": ""
   },
   {
     "name": "Livello energetico dei chakra",
     "abbr": "LEC",
     "description": "Misura del livello di apertura o energia dei sette chakra principali.",
-    "typicalRange": "0 - 100 per chakra"
+    "min": 0,
+    "max": 100,
+    "unit": "per chakra"
   }
 ]
