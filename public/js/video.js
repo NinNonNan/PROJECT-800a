@@ -1,5 +1,5 @@
 const API_KEY = 'AIzaSyBSmrQkfmMEKBuSnltZmw0SBv6ljcDpIiM';
-const CHANNEL_ID = '@project800a';
+const CHANNEL_ID = '@tSLoGnGn';
 
 async function fetchVideos() {
   try {
