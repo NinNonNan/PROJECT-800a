@@ -123,6 +123,19 @@ form button:hover {
   box-shadow: 0 0 10px #00ff66, 0 0 20px #00ff66;
 }
 
+#intro {
+  background-color: #111;
+  border-left: 4px solid #00ff66;
+  padding: 1rem 1.5rem;
+  margin: 1rem auto 2rem;
+  max-width: 800px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #00ff66;
+  box-shadow: 0 0 10px #00ff6622;
+  font-style: italic;
+}
+
 /* Mobile responsive tweaks */
 @media (max-width: 600px) {
   body {
