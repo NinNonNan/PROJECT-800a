@@ -1,13 +1,6 @@
 // ✅ Questo script gestisce un effetto "glitch" animato sul titolo della pagina (document.title).
-// Alterna tra una serie di messaggi predefiniti, creando un effetto di distorsione temporanea
+// Ora carica i messaggi da un file JSON esterno e li alterna creando un effetto di distorsione temporanea
 // usando caratteri casuali prima di ripristinare il messaggio originale. Il ciclo si ripete ogni 3 secondi.
-
-// Array di messaggi che verranno mostrati nel titolo della pagina
-const messages = [
-  "PROJECT:800a",
-  "Multidimensional Node",
-  "Observation: ACTIVE"
-];
 
 // Caratteri casuali usati per creare l'effetto "glitch"
 const glitchChars = "!@#$%^&*()_+{}|:<>?-=[];',./~";
@@ -48,11 +41,25 @@ function glitchText(text, iterations = 10, delay = 100) {
   }, delay); // Ritardo tra ogni ciclo di glitch
 }
 
-// Variabile per tenere traccia del messaggio corrente da mostrare
-let currentMessage = 0;
+/**
+ * Carica il file JSON contenente i messaggi e avvia il ciclo dell'effetto glitch.
+ * I messaggi vengono alternati ogni 3 secondi.
+ */
+fetch('data/messages.json')
+  .then(response => {
+    if (!response.ok) throw new Error("Impossibile caricare messages.json");
+    return response.json(); // Converte la risposta in oggetto JSON
+  })
+  .then(data => {
+    const messages = data.messages; // Estrae l'array "messages" dal JSON
+    let currentMessage = 0; // Variabile per tenere traccia del messaggio corrente
 
-// Ogni 3 secondi (3000 ms), esegue un nuovo effetto glitch con il messaggio successivo
-setInterval(() => {
-  glitchText(messages[currentMessage]); // Applica l'effetto glitch al messaggio corrente
-  currentMessage = (currentMessage + 1) % messages.length; // Passa al prossimo messaggio in modo ciclico
-}, 3000);
+    // Ogni 3 secondi (3000 ms), esegue un nuovo effetto glitch con il messaggio successivo
+    setInterval(() => {
+      glitchText(messages[currentMessage]); // Applica l'effetto glitch al messaggio corrente
+      currentMessage = (currentMessage + 1) % messages.length; // Passa al prossimo messaggio in modo ciclico
+    }, 3000);
+  })
+  .catch(error => {
+    console.error("Errore durante il caricamento dei messaggi:", error);
+  });
