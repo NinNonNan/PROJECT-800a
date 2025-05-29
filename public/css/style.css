@@ -1,19 +1,24 @@
 /* ===== Body & Global Styles ===== */
 body {
-  background-color: #000;                /* Sfondo nero */
-  color: #00ff66;                        /* Testo verde neon */
+  background-color: #000;
+  color: #00ff66;
   font-family: "Courier New", Courier, monospace;
   margin: 0;
   padding: 1rem;
   line-height: 1.6;
-  overflow-y: auto;                     /* Assicura lo scroll verticale */
+  overflow-y: auto;
+}
+
+/* Reset margini verticali per controllo spazi */
+h1, h2, p, ul, li, form {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 /* ===== Heading Styles ===== */
 h1 {
   font-size: 2.5rem;
   text-align: center;
-  margin: 0 0 2rem 0;                   /* margine solo sotto */
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: normal;
@@ -21,7 +26,6 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  margin: 0 0 1.5rem 0;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   font-weight: normal;
@@ -33,7 +37,7 @@ ul {
   list-style-type: none;
   padding: 0;
   max-width: 600px;
-  margin: 0 auto 2rem auto;            /* centro e spazio sotto */
+  margin: 0 auto 2rem auto;
 }
 
 li {
@@ -115,6 +119,14 @@ form textarea {
   width: 100%;
 }
 
+/* Correzione autocomplete Chrome */
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #000 inset !important;  /* sfondo nero */
+  -webkit-text-fill-color: #00ff66 !important;      /* testo verde */
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 form input:focus,
 form textarea:focus {
   outline: none;
@@ -131,7 +143,7 @@ form button {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  align-self: flex-start; /* Allinea il bottone a sinistra */
+  align-self: flex-start;
 }
 
 form button:hover {
@@ -207,7 +219,7 @@ form button:hover {
   }
 
   #content {
-    font-size: 1rem; /* circa 16px */
+    font-size: 1rem;
     padding: 0 0.5rem;
   }
 
