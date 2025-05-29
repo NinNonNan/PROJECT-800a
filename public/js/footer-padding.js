@@ -8,8 +8,17 @@ function adjustContentPadding() {
   }
 }
 
-// Esegui subito
-adjustContentPadding();
+// Aspetta che il footer venga aggiunto al DOM
+const observer = new MutationObserver(() => {
+  const footer = document.getElementById('footer-disclaimer');
+  if (footer) {
+    adjustContentPadding();
+    observer.disconnect(); // Una volta trovato, non osservare più
+    window.addEventListener('resize', adjustContentPadding); // continua ad aggiornare al resize
+  }
+});
 
-// Aggiorna se la finestra cambia dimensione (utile se il footer è responsive)
-window.addEventListener('resize', adjustContentPadding);
+observer.observe(document.getElementById('footer-placeholder'), {
+  childList: true,
+  subtree: true
+});
