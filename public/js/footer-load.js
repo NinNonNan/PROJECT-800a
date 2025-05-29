@@ -1,26 +1,23 @@
-async function loadFooter() {
-  try {
-    // Se è già stato chiuso, non lo carichiamo più
-    if (localStorage.getItem('footerClosed') === 'true') return;
+// Carica il footer nel placeholder
+fetch('/footer.html')
+  .then(res => res.text())
+  .then(html => {
+    const placeholder = document.getElementById('footer-placeholder');
+    placeholder.innerHTML = html;
 
-    const response = await fetch('footer-disclaimer.html');
-    if (!response.ok) throw new Error('Impossibile caricare il footer');
-    const footerHTML = await response.text();
-    const container = document.getElementById('footer-placeholder');
-    container.innerHTML = footerHTML;
+    // Ora che il footer è nel DOM, possiamo regolare il padding
+    adjustContentPadding();
 
-    // Aggiungi event listener al bottone di chiusura
-    const closeBtn = container.querySelector('#footer-close-btn');
-    const footer = container.querySelector('#footer-disclaimer');
-    if (closeBtn && footer) {
-      closeBtn.addEventListener('click', () => {
-        footer.style.display = 'none';
-        localStorage.setItem('footerClosed', 'true');
-      });
-    }
-  } catch (error) {
-    console.error(error);
+    // Rende il padding reattivo al resize
+    window.addEventListener('resize', adjustContentPadding);
+  });
+
+function adjustContentPadding() {
+  const footer = document.getElementById('footer-disclaimer');
+  const content = document.getElementById('content');
+
+  if (footer && content) {
+    const footerHeight = footer.offsetHeight;
+    content.style.paddingBottom = footerHeight + 'px';
   }
 }
-
-loadFooter();
