@@ -28,6 +28,13 @@ header {
   line-height: 1.6;
 }
 
+#content p {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
 /* ===== Body & Global Styles ===== */
 body {
   background-color: #000;
