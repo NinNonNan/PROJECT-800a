@@ -37,14 +37,14 @@
       <form name="contact" method="POST" data-netlify="true" action="/thank-you.html">
         <input type="hidden" name="form-name" value="contact">
         
-        <label for="name">Nome</label>
+        <label for="name">Nick</label>
         <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
-    
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="La tua email" required>
-    
+        
         <label for="message">Messaggio</label>
         <textarea id="message" name="message" placeholder="Scrivi il tuo messaggio..." rows="5" required></textarea>
+
+        <label for="info">Info</label>
+        <input type="text" value="una evnetuale risposta e reperibile a: xxx" readonly>
     
         <button type="submit">Invia</button>
       </form>
