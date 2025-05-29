@@ -17,7 +17,7 @@
 }
 
 /* Variazione con delay diversi su sezioni distinte */
-header,
+/*header,*/
 #content,
 #footer-disclaimer {
   animation: flicker 4s infinite steps(1, end);
