@@ -1,18 +1,31 @@
 /* ===== Body & Global Styles ===== */
 body {
-  background-color: #000;
-  color: #00ff66;
+  background-color: #000;                /* Sfondo nero */
+  color: #00ff66;                        /* Testo verde neon */
   font-family: "Courier New", Courier, monospace;
   margin: 0;
   padding: 1rem;
   line-height: 1.6;
+  overflow-y: auto;                     /* Assicura lo scroll verticale */
 }
 
-/* ===== Heading ===== */
+/* ===== Heading Styles ===== */
 h1 {
   font-size: 2.5rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin: 0 0 2rem 0;                   /* margine solo sotto */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0 0 1.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: normal;
+  color: #00ff66;
 }
 
 /* ===== Liste (ul, li) ===== */
@@ -20,14 +33,15 @@ ul {
   list-style-type: none;
   padding: 0;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;            /* centro e spazio sotto */
 }
 
 li {
   margin: 0.5rem 0;
+  font-size: 1.1rem;
 }
 
-/* ===== Link ===== */
+/* ===== Link Styles ===== */
 a {
   color: #00ff66;
   text-decoration: none;
@@ -56,14 +70,17 @@ a:hover::after {
   width: 100%;
 }
 
-/* ===== Contenuto principale ===== */
+/* ===== Main Content Container ===== */
 #content {
   font-size: 18px;
   line-height: 1.6;
-  padding: 1em;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
-/* ===== Form ===== */
+/* ===== Form Styles ===== */
 form {
   max-width: 600px;
   margin: 2rem auto;
@@ -75,11 +92,14 @@ form {
   border: 2px solid #00ff66;
   border-radius: 5px;
   box-shadow: 0 0 10px #00ff6633;
+  box-sizing: border-box;
 }
 
 form label {
   font-weight: bold;
   color: #00ff66;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 form input,
@@ -91,6 +111,8 @@ form textarea {
   font-family: "Courier New", Courier, monospace;
   font-size: 1rem;
   resize: vertical;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 form input:focus,
@@ -109,6 +131,7 @@ form button {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  align-self: flex-start; /* Allinea il bottone a sinistra */
 }
 
 form button:hover {
@@ -121,13 +144,14 @@ form button:hover {
   background-color: #111;
   border-left: 4px solid #00ff66;
   padding: 1rem 1.5rem;
-  margin: 1rem auto 2rem;
+  margin: 1rem auto 2rem auto;
   max-width: 800px;
   font-size: 1.1rem;
   line-height: 1.7;
   color: #00ff66;
   box-shadow: 0 0 10px #00ff6622;
   font-style: italic;
+  box-sizing: border-box;
 }
 
 /* ===== Footer disclaimer ===== */
@@ -174,11 +198,20 @@ form button:hover {
     font-size: 2rem;
   }
 
+  h2 {
+    font-size: 1.5rem;
+  }
+
   li {
     font-size: 1rem;
   }
 
   #content {
-    font-size: 1rem; /* CORRETTO da 32px a 1rem (16px) */
+    font-size: 1rem; /* circa 16px */
+    padding: 0 0.5rem;
+  }
+
+  form {
+    padding: 1.5rem 1rem;
   }
 }
