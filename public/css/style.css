@@ -84,6 +84,13 @@ a:hover::after {
   width: 100%;
 }
 
+#contact {
+  max-width: 800px; /* come #intro */
+  margin: 2rem auto; /* margine verticale e centratura orizzontale */
+  padding: 0 1rem; /* un po’ di padding laterale per spaziatura interna */
+  box-sizing: border-box;
+}
+
 /* ===== Form ===== */
 form {
   max-width: 600px;
