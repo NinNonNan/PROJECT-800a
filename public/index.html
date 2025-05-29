@@ -4,34 +4,39 @@
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <title></title>
+  <title>Project:800A</title>
   <script src="js/glitch-title.js" defer></script>
   <script src="js/menu-loader.js" defer></script>
 </head>
 <body>
-  <h1>welcome in PROJECT:800a.</h1>
-  <ul id="menu">
-    <li>Caricamento menu...</li>
-  </ul>
-  <section id="contact">
-    <h2>Contattaci</h2>
-    <form name="contact" method="POST" data-netlify="true" action="/thank-you.html">
-      <input type="hidden" name="form-name" value="contact">
-      
-      <label for="name">Nome</label>
-      <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
-  
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="La tua email" required>
-  
-      <label for="message">Messaggio</label>
-      <textarea id="message" name="message" placeholder="Scrivi il tuo messaggio..." rows="5" required></textarea>
-  
-      <button type="submit">Invia</button>
-    </form>
-  </section>
-<div id="footer-placeholder"></div>
-<script src="js/footer-load.js"></script>
-<script src="js/footer-padding.js"></script>
+  <div id="content"><!-- 🔹 Serve per calcolare il padding -->
+    <h1>welcome in PROJECT:800a.</h1>
+
+    <ul id="menu">
+      <li>Caricamento menu...</li>
+    </ul>
+
+    <section id="contact">
+      <h2>Contattaci</h2>
+      <form name="contact" method="POST" data-netlify="true" action="/thank-you.html">
+        <input type="hidden" name="form-name" value="contact">
+        
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
+    
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="La tua email" required>
+    
+        <label for="message">Messaggio</label>
+        <textarea id="message" name="message" placeholder="Scrivi il tuo messaggio..." rows="5" required></textarea>
+    
+        <button type="submit">Invia</button>
+      </form>
+    </section>
+  </div>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/footer-load.js"></script>
+  <script src="js/footer-padding.js"></script>
 </body>
 </html>
