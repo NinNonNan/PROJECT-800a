@@ -5,47 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Buzzing Neon Page</title>
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    /* Qui va il tuo CSS completo incollato così com'è */
-    /* ... (tutto il tuo CSS qui sopra) ... */
-
-    /* ===== Effetto Neon Buzzing su body ===== */
-    @keyframes flicker {
-      0%   { opacity: 1; filter: brightness(1); }
-      2%   { opacity: 0.8; filter: brightness(0.7); }
-      4%   { opacity: 1; filter: brightness(1.1); }
-      6%   { opacity: 0.6; filter: brightness(0.5); }
-      8%   { opacity: 1; filter: brightness(1); }
-      10%  { opacity: 0.9; filter: brightness(0.8); }
-      12%  { opacity: 1; filter: brightness(1); }
-      14%  { opacity: 0.5; filter: brightness(0.4); }
-      16%  { opacity: 1; filter: brightness(1); }
-      100% { opacity: 1; filter: brightness(1); }
-    }
-
-    .flicker {
-      animation: flicker 2.5s infinite steps(1, end);
-    }
-
-    /* Per una variazione più random, si può applicare a elementi separati con delay diversi */
-    header,
-    #content,
-    #footer-disclaimer {
-      animation: flicker 4s infinite steps(1, end);
-    }
-
-    header {
-      animation-delay: 0.2s;
-    }
-
-    #content {
-      animation-delay: 0.4s;
-    }
-
-    #footer-disclaimer {
-      animation-delay: 0.6s;
-    }
-  </style>
+  <link rel="stylesheet" href="css/buzzing.css">
 </head>
 <body class="flicker">
   <header>NEON SYSTEM FAILURE</header>
