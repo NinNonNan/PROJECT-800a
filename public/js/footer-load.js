@@ -1,23 +1,26 @@
-// Carica il footer nel placeholder
-fetch('/footer.html')
-  .then(res => res.text())
-  .then(html => {
-    const placeholder = document.getElementById('footer-placeholder');
-    placeholder.innerHTML = html;
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("/footer.html")
+    .then(response => response.text())
+    .then(html => {
+      const placeholder = document.getElementById("footer-placeholder");
+      placeholder.innerHTML = html;
 
-    // Ora che il footer è nel DOM, possiamo regolare il padding
-    adjustContentPadding();
+      // Funzionalità per il bottone di chiusura
+      const closeBtn = document.getElementById("footer-close-btn");
+      const footer = document.getElementById("footer-disclaimer");
 
-    // Rende il padding reattivo al resize
-    window.addEventListener('resize', adjustContentPadding);
-  });
+      if (closeBtn && footer) {
+        closeBtn.addEventListener("click", () => {
+          footer.style.display = "none";
+          adjustContentPadding(); // aggiorna padding se chiuso
+        });
+      }
 
-function adjustContentPadding() {
-  const footer = document.getElementById('footer-disclaimer');
-  const content = document.getElementById('content');
+      // Calcola il padding solo dopo che il footer è stato caricato
+      adjustContentPadding();
+    })
+    .catch(err => {
+      console.error("Impossibile caricare il footer:", err);
+    });
+});
 
-  if (footer && content) {
-    const footerHeight = footer.offsetHeight;
-    content.style.paddingBottom = footerHeight + 'px';
-  }
-}
