@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buzzing Neon Page</title>
+  <style>
+    /* Qui va il tuo CSS completo incollato così com'è */
+    /* ... (tutto il tuo CSS qui sopra) ... */
+
+    /* ===== Effetto Neon Buzzing su body ===== */
+    @keyframes flicker {
+      0%   { opacity: 1; filter: brightness(1); }
+      2%   { opacity: 0.8; filter: brightness(0.7); }
+      4%   { opacity: 1; filter: brightness(1.1); }
+      6%   { opacity: 0.6; filter: brightness(0.5); }
+      8%   { opacity: 1; filter: brightness(1); }
+      10%  { opacity: 0.9; filter: brightness(0.8); }
+      12%  { opacity: 1; filter: brightness(1); }
+      14%  { opacity: 0.5; filter: brightness(0.4); }
+      16%  { opacity: 1; filter: brightness(1); }
+      100% { opacity: 1; filter: brightness(1); }
+    }
+
+    .flicker {
+      animation: flicker 2.5s infinite steps(1, end);
+    }
+
+    /* Per una variazione più random, si può applicare a elementi separati con delay diversi */
+    header,
+    #content,
+    #footer-disclaimer {
+      animation: flicker 4s infinite steps(1, end);
+    }
+
+    header {
+      animation-delay: 0.2s;
+    }
+
+    #content {
+      animation-delay: 0.4s;
+    }
+
+    #footer-disclaimer {
+      animation-delay: 0.6s;
+    }
+  </style>
+</head>
+<body class="flicker">
+  <header>NEON SYSTEM FAILURE</header>
+
+  <div id="content">
+    <div id="intro">
+      <p>
+        Benvenuto nell'area di test del sistema. Questo è un paragrafo introduttivo in cui si osservano
+        comportamenti anomali nel circuito d'illuminazione. Tutto il sistema sembra rispondere con
+        intermittente instabilità. Le luci a neon stanno per cedere...
+      </p>
+    </div>
+
+    <h1>Segnaposto Esteso</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum facilisis ligula, 
+      nec accumsan nisl commodo vel. Suspendisse potenti. Donec tristique, velit ac rutrum fermentum, 
+      nulla justo convallis turpis, ac efficitur sem erat id lacus. Praesent et mauris nulla. 
+      In ornare metus in tortor efficitur, id feugiat augue facilisis. Integer tincidunt dolor sed 
+      porttitor bibendum. Maecenas dictum nisi ac risus pulvinar, sed fermentum arcu convallis. 
+      Aenean id bibendum libero. Donec congue, lorem in tempor tincidunt, nulla arcu fermentum lorem, 
+      in suscipit felis nisl vel sem. Sed ullamcorper justo nec felis vulputate, nec elementum nisl facilisis.
+    </p>
+    <p>
+      Curabitur euismod finibus massa, vitae volutpat lacus fringilla vel. Etiam at arcu justo. 
+      Nunc varius ligula vel sapien hendrerit, non vestibulum nisi bibendum. Sed dapibus purus nec 
+      lorem dignissim, et feugiat velit tincidunt. Pellentesque non mauris vitae ligula sollicitudin 
+      suscipit nec eget lacus. Phasellus imperdiet enim a orci cursus lacinia. Sed a lacinia erat, 
+      ac laoreet ex. Integer gravida, justo sit amet varius lobortis, enim quam pretium velit, 
+      ac volutpat lectus risus nec metus. Pellentesque volutpat a justo non lobortis. Nulla facilisi.
+    </p>
+
+    <div id="contact">
+      <form>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="message">Messaggio:</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+
+        <button type="submit">Invia</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="footer-disclaimer">
+    ⚠️ Questo è un sistema simulato. Le luci a neon stanno malfunzionando.
+    <button id="footer-close-btn" onclick="this.parentElement.style.display='none'">×</button>
+  </div>
+</body>
+</html>
