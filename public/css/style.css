@@ -8,6 +8,35 @@ body {
   line-height: 1.6;
 }
 
+/* ===== Header fisso ===== */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000; /* o trasparente, come preferisci */
+  border-bottom: 2px solid #00ff66;
+  padding: 1rem 0;
+  z-index: 1000;
+  text-align: center;
+  color: #00ff66;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2.5rem;
+  line-height: 1;
+  box-shadow: 0 2px 10px #00ff66aa;
+}
+
+/* ===== Spazio per contenuto sotto header ===== */
+#content {
+  padding-top: 5rem; /* spazio per header fisso alto circa 4-5rem */
+  font-size: 18px;
+  line-height: 1.6;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+
+
 /* ===== Heading ===== */
 h1, h2 {
   margin-top: 0;
