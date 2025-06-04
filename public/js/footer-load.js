@@ -15,9 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
           adjustContentPadding(); // aggiorna padding se chiuso
         });
       }
-
-      // Calcola il padding solo dopo che il footer è stato caricato
-      adjustContentPadding();
     })
     .catch(err => {
       console.error("Impossibile caricare il footer:", err);
