@@ -177,19 +177,17 @@ form button:hover {
 
 /* ===== Footer disclaimer ===== */
 #footer-disclaimer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  position: relative; /* da fixed a relative */
   width: 100%;
   background-color: rgba(0, 128, 64, 0.85);
   color: #00ff66;
   padding: 1rem 2rem;
   border-top: 2px solid #00ff66;
-  box-shadow: 0 -2px 15px #00ff66cc;
+  box-shadow: none; /* togli ombra */
   font-family: "Courier New", Courier, monospace;
   font-size: 0.9rem;
-  z-index: 9999;
   box-sizing: border-box;
+  margin-top: 2rem;
 }
 
 #footer-close-btn {
