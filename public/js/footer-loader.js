@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("/footer.html")
+  fetch("/disclaimer.html")
     .then(response => response.text())
     .then(html => {
       const placeholder = document.getElementById("footer-placeholder");
