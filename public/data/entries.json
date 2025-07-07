@@ -1,0 +1,20 @@
+[
+  {"name": "Fallout", "type_code": "UN", "pub_date": "1997-10-10"},
+  {"name": "The Sims", "type_code": "UN", "pub_date": "2000-02-04"},
+  {"name": "Minecraft", "type_code": "UN", "pub_date": "2011-11-18"},
+  {"name": "Green Oaks", "type_code": "UN", "pub_date": "2021-01-01"},
+  {"name": "Carbon 2185", "type_code": "UN", "pub_date": "2019-09-01"},
+  {"name": "La Torre Nera", "type_code": "UN", "pub_date": "1982-06-10"},
+  {"name": "No Man's Sky", "type_code": "UN", "pub_date": "2016-08-09"},
+  {"name": "Il Faro al Confine dell’Universo", "type_code": "UN", "pub_date": "2021-02-01"},
+  {"name": "Weird Tales", "type_code": "UN", "pub_date": "2013-04-13"},
+  {"name": "Fallout 76", "type_code": "IN", "pub_date": "2018-11-14"},
+  {"name": "The Sims 4", "type_code": "IN", "pub_date": "2014-09-02"},
+  {"name": "Minecraft Java Edition", "type_code": "IN", "pub_date": "2011-11-18"},
+  {"name": "Green Oaks: Simulatore", "type_code": "IN", "pub_date": "2021-01-01"},
+  {"name": "Carbon 2185 Roll20", "type_code": "IN", "pub_date": "2020-01-15"},
+  {"name": "La Torre Nera (serie)", "type_code": "IN", "pub_date": "2017-07-19"},
+  {"name": "No Man's Sky (videogioco)", "type_code": "IN", "pub_date": "2016-08-09"},
+  {"name": "Il Faro – Simulatore VR", "type_code": "IN", "pub_date": "2021-02-01"},
+  {"name": "Chronicles Of Darkness", "type_code": "IN", "pub_date": "2013-04-13"}
+]
