@@ -7,10 +7,12 @@ import string
 def generate_code(name, type_code, pub_date, length=12):
     """
     Genera un codice univoco con lunghezza fissa, con carattere di controllo alfabetico finale.
+    Codice composto solo da caratteri alfanumerici (A-Z, 0-9).
     """
 
-    # Calcolare le iniziali (prima lettera di ogni parola, maiuscola)
-    initials = ''.join(word[0].upper() for word in name.split())
+    # Prendi solo caratteri alfanumerici e calcola iniziali (prima lettera di ogni parola valida)
+    words = [''.join(ch for ch in word if ch.isalnum()) for word in name.split()]
+    initials = ''.join(word[0].upper() for word in words if word)  # parola non vuota
 
     # Convertire data in formato YYMMDD
     date_obj = datetime.strptime(pub_date, "%Y-%m-%d")
@@ -19,8 +21,7 @@ def generate_code(name, type_code, pub_date, length=12):
     # Combinazione base senza carattere di controllo
     base_code = initials + type_code + date_str
 
-    # Troncamento o padding del base_code per farlo stare in length-1 caratteri
-    # Per sicurezza, tagliamo al massimo alla lunghezza richiesta - 1
+    # Troncamento o padding per rispettare lunghezza-1
     max_base_len = length - 1
     if len(base_code) > max_base_len:
         base_code = base_code[:max_base_len]
@@ -30,7 +31,6 @@ def generate_code(name, type_code, pub_date, length=12):
     # Calcolo carattere di controllo alfabetico (A-Z)
     hash_input = name + type_code + pub_date
     hash_bytes = hashlib.md5(hash_input.encode()).digest()
-    # Prendi il primo byte e mappa in 0-25 -> lettera A-Z
     control_index = hash_bytes[0] % 26
     control_char = string.ascii_uppercase[control_index]
 
