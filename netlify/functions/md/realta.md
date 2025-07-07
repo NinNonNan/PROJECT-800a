@@ -12,7 +12,7 @@ The Sims 4: TS4IN140902G
 Minecraft Java Edition: MJEIN111118R
 Green Oaks: Simulatore: GOSIN210101H
 Carbon 2185 Roll20: C2RIN200115E
-La Torre Nera (serie): LTN(IN17071O
-No Man's Sky (videogioco): NMS(IN16080N
-Il Faro – Simulatore VR: IF–SVIN2102Y
+La Torre Nera (serie): LTNSIN17071O
+No Man's Sky (videogioco): NMSVIN16080N
+Il Faro – Simulatore VR: IFSVIN21020Y
 Chronicles Of Darkness: CODIN130413O
