@@ -1,0 +1,30 @@
+name: Aggiorna Codici Realtà
+
+on:
+  workflow_dispatch:   # Avvio manuale
+  schedule:
+    - cron: '0 */7 * * *'  # Ogni 7 ore
+
+jobs:
+  update-realta-md:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Esegui script Python
+        run: python aggiorna_codici.py
+
+      - name: Commit e Push modifiche
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add netlify/functions/md/realta.md
+          git commit -m "Aggiornamento automatico realta.md" || echo "Nessuna modifica da committare"
+          git push
