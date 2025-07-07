@@ -1,14 +1,36 @@
 import hashlib
 from datetime import datetime
+import os
 
 def generate_code(name, type_code, pub_date):
+    """
+    Genera un codice univoco per l'universo o l'interfaccia.
+
+    Args:
+    - name (str): Nome dell'universo o interfaccia.
+    - type_code (str): Tipo di codice ('UN' per universo, 'IN' per interfaccia).
+    - pub_date (str): Data di prima pubblicazione nel formato 'YYYY-MM-DD'.
+
+    Returns:
+    - str: Codice univoco generato.
+    """
+    # Calcolare le iniziali del nome (prima lettera di ogni parola)
     initials = ''.join([word[0].upper() for word in name.split()])
+
+    # Convertire la data di pubblicazione nel formato YYMMDD
     date_obj = datetime.strptime(pub_date, "%Y-%m-%d")
     date_str = date_obj.strftime("%y%m%d")
+
+    # Calcolare un carattere di controllo (hash del nome + data)
     hash_input = name + pub_date
     control_char = hashlib.md5(hash_input.encode()).hexdigest()[0].upper()
-    return f"{initials}{type_code}{date_str}{control_char}"
 
+    # Combinare tutto in un unico codice
+    code = f"{initials}{type_code}{date_str}{control_char}"
+
+    return code
+
+# Lista di universi e interfacce con nome e data di pubblicazione
 entries = [
     # Universi
     ("Fallout", "UN", "1997-10-10"),
@@ -29,18 +51,16 @@ entries = [
     ("La Torre Nera (serie)", "IN", "2017-07-19"),
     ("No Man's Sky (videogioco)", "IN", "2016-08-09"),
     ("Il Faro – Simulatore VR", "IN", "2021-02-01"),
-    ("Chronicles Of Darkness", "UN", "2013-04-13"),
+    ("Chronicles Of Darkness", "IN", "2013-04-13")
 ]
 
-# Creazione del contenuto markdown
-lines = ["# Codici Univoci Generati", ""]
+# Percorso del file da sovrascrivere
+output_path = os.path.join("netlify", "functions", "md", "realta.md")
 
-for name, type_code, pub_date in entries:
-    code = generate_code(name, type_code, pub_date)
-    lines.append(f"- **{name}** ({type_code}, {pub_date}): `{code}`")
+# Scrittura nel file
+with open(output_path, "w", encoding="utf-8") as f:
+    for entry in entries:
+        name, type_code, pub_date = entry
+        code = generate_code(name, type_code, pub_date)
+        f.write(f"{name}: {code}\n")
 
-output = '\n'.join(lines)
-
-# Scrittura su netlify/functions/md/realta.md
-with open("netlify/functions/md/realta.md", "w", encoding="utf-8") as f:
-    f.write(output)
