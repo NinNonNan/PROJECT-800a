@@ -19,6 +19,7 @@ entries = [
     ("La Torre Nera", "UN", "1982-06-10"),
     ("No Man's Sky", "UN", "2016-08-09"),
     ("Il Faro al Confine dell’Universo", "UN", "2021-02-01"),
+    ("Weird Tales", "UN", "2013-04-13"),
     # Interfacce
     ("Fallout 76", "IN", "2018-11-14"),
     ("The Sims 4", "IN", "2014-09-02"),
@@ -27,7 +28,8 @@ entries = [
     ("Carbon 2185 Roll20", "IN", "2020-01-15"),
     ("La Torre Nera (serie)", "IN", "2017-07-19"),
     ("No Man's Sky (videogioco)", "IN", "2016-08-09"),
-    ("Il Faro – Simulatore VR", "IN", "2021-02-01")
+    ("Il Faro – Simulatore VR", "IN", "2021-02-01"),
+    ("Chronicles Of Darkness", "UN", "2013-04-13"),
 ]
 
 # Creazione del contenuto markdown
