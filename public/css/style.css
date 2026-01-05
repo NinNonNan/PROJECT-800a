@@ -38,12 +38,23 @@ header {
   padding-right: 1em;
   font-size: 18px;
   line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 #content p {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* ===== Back Home Link (Viewer) ===== */
+#back-home {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1em;
   box-sizing: border-box;
 }
 
