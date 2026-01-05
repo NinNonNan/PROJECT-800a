@@ -87,6 +87,16 @@ li {
   margin: 0.5rem 0;
 }
 
+/* Stile card per la lista video (simile a bio-feed) */
+#video-list li {
+  border: 1px solid var(--text-color);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px var(--shadow-strong);
+  background-color: var(--bg-secondary);
+}
+
 /* ===== Link ===== */
 a {
   color: var(--text-color);
@@ -132,9 +142,9 @@ form {
   gap: 1rem;
   background-color: var(--bg-secondary);
   padding: 2rem;
-  border: 2px solid var(--text-color);
-  border-radius: 5px;
-  box-shadow: 0 0 10px var(--shadow-weak);
+  border: 1px solid var(--text-color);
+  border-radius: 6px;
+  box-shadow: 0 0 10px var(--shadow-strong);
 }
 
 form label {
@@ -187,14 +197,15 @@ form button:hover {
 /* ===== Intro block ===== */
 #intro {
   background-color: var(--bg-secondary);
-  border-left: 4px solid var(--text-color);
+  border: 1px solid var(--text-color);
+  border-radius: 6px;
   padding: 1rem 1.5rem;
   margin: 1rem auto 2rem;
   max-width: 800px;
   font-size: 1.1rem;
   line-height: 1.7;
   color: var(--text-color);
-  box-shadow: 0 0 10px var(--shadow-weak);
+  box-shadow: 0 0 10px var(--shadow-strong);
   font-style: italic;
 }
 
